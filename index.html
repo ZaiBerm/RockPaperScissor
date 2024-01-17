@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;800&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>ROCK PAPER SCISSOR</h1>
+
+    <p class = "indicator" id = 'indi'>
+      START
+    <p>
+
+    <div class = "content-div">
+      <div class = "player1">
+        <p class = "name">YOU</p>
+        <p class="score" id="yourScore">SCORE: </p>
+        <div class = "picked-div">
+          <img src="./images/b6164e627cc8fc57974ab9b0c3da6523.jpg" class = "picked" id = "picked1">
+        </div>
+        <div class = "buttons-div">
+          <button class = "rock button" id="your_btn1" value="rock">
+            <img src = "./images/rock.jpg">
+          </button>
+          <button class = "paper button" id="your_btn2" value="paper">
+            <img src = "./images/paper.jfif" >
+          </button>
+          <button class = "scissor button" id="your_btn3" value="scissor">
+            <img src = "./images/scissor.jfif">
+          </button>
+        </div>
+      </div>
+      <div class = "player2">
+        <p class = "name">OPPONENT</p>
+        <p class="score" id="oppScore">SCORE: </p>
+        <div class = "picked-div">
+          <img src="./images/b6164e627cc8fc57974ab9b0c3da6523.jpg" class = "picked" id = "picked2">
+        </div>
+        <div class = "buttons-div">
+          <button class = "rock button" value="rock" id="opp_btn1">
+            <img src = "./images/rock.jpg">
+          </button>
+          <button class = "paper button" value="paper" id="opp_btn2">
+            <img src = "./images/paper.jfif" >
+          </button>
+          <button class = "scissor button" value="scissor" id="opp_btn3">
+            <img src = "./images/scissor.jfif">
+          </button>
+        </div>
+      </div>
+
+      <div class = "game-over-panel" id = "pa-panel">
+        <p class = "game-over-text">GAME OVER</p>
+        <p class = "remark" id = "remark">
+          YOU LOSE :[
+        </p>
+        <p class = "p-again">PLAY AGAIN?</p>
+        <div>
+          <button id = "yes">YES</button>
+          <button id = "no">NO</button>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
